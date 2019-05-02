@@ -11,12 +11,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
 span {
+    width: 90%;
     font-size: 30px;
     color: #0F0;
 }
-
 canvas {
     height: 100%;
     width:100%;
@@ -25,19 +24,16 @@ canvas {
     position: absolute;
     z-index: -1;
 }
-
 .caption {
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
 }
-
 .text {
     font-weight:700;
     text-align: center;
 }
-
 .type-cursor {
     animation:blink .4s ease infinite;
     opacity:0;
@@ -45,30 +41,25 @@ canvas {
  @keyframes blink {
  	100% { opacity:1; }
 }
-
 footer {
     position:absolute;
     bottom:0;
     width:100%;
     height:40px;
     text-align: center;
-    
 }
-
 li {
     list-style: none;
 }
-
 i {
     color: #0F0;
     font-size: 24px;
     padding-right: 20px;
 }
-
 @media screen and (max-width: 450px){
 
     span {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }

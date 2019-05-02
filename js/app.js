@@ -3,7 +3,7 @@ document.body.appendChild(div);
 div.id = `caption`;
 div.classList = `caption`;
 const text = document.createElement('span');
-const textnode = document.createTextNode(`Hello I'm Ibrahim Ragab former lawyer and front-end web developer, if you'd like to stay in touch check links below, always happy to hear from you! `)
+const textnode = document.createTextNode(`Hello, I'm Ibrahim Ragab Front-End Web Developer, contact me or stay in touch using links below, happy to hear from you`)
 document.getElementById('caption').appendChild(text);
 text.id = `str`;
 text.classList = `text`;
