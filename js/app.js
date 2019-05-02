@@ -1,9 +1,12 @@
+const canvas = document.createElement('canvas');
+document.body.appendChild(canvas);
+canvas.id = `matrix`;
 const div = document.createElement('div');
 document.body.appendChild(div);
 div.id = `caption`;
 div.classList = `caption`;
 const text = document.createElement('span');
-const textnode = document.createTextNode(`Hello, I'm Ibrahim Ragab Front-End Web Developer, contact me or stay in touch using links below, happy to hear from you`)
+const textnode = document.createTextNode(`Hello, I'm Ibrahim Ragab former Lawyer and Front-End Web Developer, contact me or stay in touch using links below, always happy to hear from you...`)
 document.getElementById('caption').appendChild(text);
 text.id = `str`;
 text.classList = `text`;
@@ -20,6 +23,7 @@ twitterLink.href = `https://twitter.com/AbrahamRagab`;
 twitterLink.target = '_blank';
 twitterLink.rel = 'noopener';
 twitterLink.id = `twitter`;
+twitterLink.setAttribute('aria-label', 'go to my twitter account');
 footer.appendChild(twitterLink);
 const twitter = document.createElement('i');
 twitter.classList = `fab fa-twitter`;
@@ -29,6 +33,7 @@ githubLink.href = `https://github.com/Yuribenjamin`;
 githubLink.target = '_blank';
 githubLink.rel = 'noopener';
 githubLink.id = `github`;
+githubLink.setAttribute('aria-label', 'go to my twitter account');
 footer.appendChild(githubLink);
 const github = document.createElement('i');
 github.classList = `fab fa-github`;
@@ -38,13 +43,14 @@ linkedinLink.href = `https://www.linkedin.com/in/abrahamragab/`;
 linkedinLink.target = '_blank';
 linkedinLink.rel = 'noopener';
 linkedinLink.id = `linkedin`;
+linkedinLink.setAttribute('aria-label', 'go to my twitter account');
 footer.appendChild(linkedinLink);
 const linkedin = document.createElement('i');
 linkedin.classList = `fab fa-linkedin`;
 document.getElementById('linkedin').appendChild(linkedin);
 let pos = 0;
-let speed = 200;
-let speedBackWard = 50;
+let speed = 250;
+let speedBackWard = 20;
 const str = document.getElementById('str').innerText;
 document.getElementById('str').innerText = '';
 function type() {
