@@ -35,7 +35,6 @@ canvas {
 
 .text {
     font-weight:700;
-    border-radius:25px;
     text-align: center;
 }
 
@@ -64,4 +63,12 @@ i {
     color: #0F0;
     font-size: 24px;
     padding-right: 20px;
+}
+
+@media screen and (max-width: 450px){
+
+    span {
+        font-size: 20px;
+    }
+
 }
