@@ -157,7 +157,7 @@ document.body.appendChild(scriptTag);
 const fontAwesome = document.createElement('link');
 fontAwesome.href = `https://use.fontawesome.com/releases/v5.8.1/css/all.css`;
 fontAwesome.integrity = `sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf`;
-fontAwesome.rel = `prefetch`;
+fontAwesome.rel = `stylesheet`;
 fontAwesome.type = `text/css`;
 fontAwesome.defer = true;
 fontAwesome.crossOrigin = `anonymous`;
