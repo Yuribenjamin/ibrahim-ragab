@@ -154,6 +154,10 @@ scriptTag.src = `js/canvas.js`;
 scriptTag.defer = true;
 document.body.appendChild(scriptTag);
 
+const serviceWorker = document.createElement('script');
+serviceWorker.src = `js/serviceWorker.js`;
+document.getElementsByTagName('head')[0].appendChild(serviceWorker);
+
 const fontAwesome = document.createElement('link');
 fontAwesome.href = `https://use.fontawesome.com/releases/v5.8.1/css/all.css`;
 fontAwesome.integrity = `sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf`;
@@ -162,6 +166,11 @@ fontAwesome.type = `text/css`;
 fontAwesome.defer = true;
 fontAwesome.crossOrigin = `anonymous`;
 document.getElementsByTagName('head')[0].appendChild(fontAwesome);
+
+const manifest= document.createElement('link');
+manifest.href = `./manifest.json`;
+manifest.rel = `manifest`;
+document.getElementsByTagName('head')[0].appendChild(manifest);
 
 const css = document.createElement('link');
 css.href = `css/app.css`;
