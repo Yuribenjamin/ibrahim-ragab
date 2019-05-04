@@ -29,6 +29,7 @@ divC.setAttribute('class','dropdown-content');
 const link = document.createElement('a');
 link.href = `#`;
 link.id = `profile`;
+link.title = `resume`;
 link.setAttribute('aria-label', 'link to my resume');
 document.getElementById('dropdown-content').appendChild(link);
 
@@ -39,6 +40,7 @@ profile.classList = `fas fa-user`;
 const link1 = document.createElement('a');
 link1.href = `#`;
 link1.id = `profile2`;
+link1.title = `projects`;
 link1.setAttribute('aria-label', 'link to my projects');
 document.getElementById('dropdown-content').appendChild(link1);
 
@@ -49,6 +51,7 @@ profile2.classList = `fas fa-file`;
 const link3 = document.createElement('a');
 link3.href = `#`;
 link3.id = `profile3`;
+link3.title = `contact me`;
 link3.setAttribute('aria-label', 'link to my contact me');
 document.getElementById('dropdown-content').appendChild(link3);
 
