@@ -172,6 +172,13 @@ manifest.href = `./manifest.json`;
 manifest.rel = `manifest`;
 document.getElementsByTagName('head')[0].appendChild(manifest);
 
+const siteIcon = document.createElement('link');
+siteIcon.rel = `icon`;
+siteIcon.href = `./matrix.png`;
+siteIcon.type = `image/png`;
+siteIcon.sizes = `16x16`;
+document.getElementsByTagName('head')[0].appendChild(siteIcon);
+
 const css = document.createElement('link');
 css.href = `css/app.css`;
 css.rel = `stylesheet`;
