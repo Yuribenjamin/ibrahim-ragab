@@ -1,3 +1,5 @@
+"use strict";
+
 const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 canvas.id = `matrix`;
@@ -146,3 +148,12 @@ function erase() {
         setTimeout(type, speed)
     }
 }
+
+const scriptTag = document.createElement('script');
+scriptTag.src = `js/canvas.js`;
+scriptTag.defer = true;
+document.body.appendChild(scriptTag);
+
+const myTime = window.performance.now();
+    console.log(myTime);
+
