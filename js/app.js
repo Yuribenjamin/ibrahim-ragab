@@ -4,63 +4,6 @@ const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 canvas.id = `matrix`;
 
-const menuheader = document.createElement('header');
-document.body.appendChild(menuheader);
-menuheader.id = `menuheader`;
-
-const menudrop = document.createElement('div');
-document.getElementById('menuheader').appendChild(menudrop);
-menudrop.id = `dropdown`;
-menudrop.setAttribute('class','dropdown');
-
-const menuspan = document.createElement('span');
-document.getElementById('dropdown').appendChild(menuspan);
-menuspan.id = `menuspan`;
-
-
-const menuicon = document.createElement('i');
-document.getElementById('menuspan').appendChild(menuicon);
-menuicon.classList = `fas fa-bars`;
-menuicon.id = `menuicon`;
-
-const divC = document.createElement('div');
-document.getElementById('dropdown').appendChild(divC);
-divC.id = `dropdown-content`;
-divC.setAttribute('class','dropdown-content');
-
-const link = document.createElement('a');
-link.href = `#`;
-link.id = `profile`;
-link.title = `resume`;
-link.setAttribute('aria-label', 'link to my resume');
-document.getElementById('dropdown-content').appendChild(link);
-
-const profile = document.createElement('i');
-document.getElementById('profile').appendChild(profile);
-profile.classList = `fas fa-user`;
-
-const link1 = document.createElement('a');
-link1.href = `#`;
-link1.id = `profile2`;
-link1.title = `projects`;
-link1.setAttribute('aria-label', 'link to my projects');
-document.getElementById('dropdown-content').appendChild(link1);
-
-const profile2 = document.createElement('i');
-document.getElementById('profile2').appendChild(profile2);
-profile2.classList = `fas fa-file`;
-
-const link3 = document.createElement('a');
-link3.href = `#`;
-link3.id = `profile3`;
-link3.title = `contact me`;
-link3.setAttribute('aria-label', 'link to my contact me');
-document.getElementById('dropdown-content').appendChild(link3);
-
-const profile3 = document.createElement('i');
-document.getElementById('profile3').appendChild(profile3);
-profile3.classList = `fas fa-id-badge`;
-
 const main = document.createElement('main');
 document.body.appendChild(main);
 main.id = `main`;
@@ -71,7 +14,7 @@ div.id = `caption`;
 div.classList = `caption`;
 
 const text = document.createElement('span');
-const textnode = document.createTextNode(`Hello, I'm Ibrahim Ragab former Lawyer and Front-End Web Developer, contact me or stay in touch using links below, always happy to hear from you...`)
+const textnode = document.createTextNode(`Hello, I'm Ibrahim Ragab former Lawyer and Front-End Web Developer. Contact me or stay in touch using links below. Always happy to hear from you.`)
 document.getElementById('caption').appendChild(text);
 text.id = `str`;
 text.classList = `text`;
@@ -174,7 +117,7 @@ document.getElementsByTagName('head')[0].appendChild(manifest);
 
 const siteIcon = document.createElement('link');
 siteIcon.rel = `icon`;
-siteIcon.href = `./matrix.png`;
+siteIcon.href = `./assets/matrix.png`;
 siteIcon.type = `image/png`;
 siteIcon.sizes = `16x16`;
 document.getElementsByTagName('head')[0].appendChild(siteIcon);
@@ -185,7 +128,3 @@ css.rel = `stylesheet`;
 css.type = `text/css`;
 css.defer = true;
 document.getElementsByTagName('head')[0].appendChild(css);
-
-const myTime = window.performance.now();
-    console.log(myTime);
-

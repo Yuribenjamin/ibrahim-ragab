@@ -3,13 +3,18 @@
     "name": "Ibrahim Ragab",
     "icons": [
       {
-        "src":"./matrix.png",
+        "src":"./assets/matrix.png",
         "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src":"./assets/matrix-512.png",
+        "sizes": "512x512",
         "type": "image/png"
       }
     ],
     "start_url": "./",
     "background_color": "#000",
-    "Theme_color": "#000000",
+    "theme-color": "#000000",
     "display": "standalone"
   }
