@@ -94,6 +94,8 @@ function erase() {
 
 const scriptTag = document.createElement('script');
 scriptTag.src = `js/canvas.js`;
+scriptTag.rel = `preload`;
+scriptTag.as = `script`;
 scriptTag.defer = true;
 document.body.appendChild(scriptTag);
 
