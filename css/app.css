@@ -66,3 +66,27 @@ i {
     }
 
 }
+
+#menuicon {	
+	margin: 30px 0 0 30px;	
+}	
+
+.dropdown {	
+  position: absolute;	
+  display: flex;	
+  flex-direction: column;	
+}	
+
+.dropdown-content {	
+  display: none;	
+  position: absolute;	
+  padding: 12px 16px;	
+  z-index: 1;	
+  padding-top: 80px;	
+  padding-left: 30px;	
+  text-align: center;	
+}	
+
+.dropdown:hover .dropdown-content {	
+  display: block;	
+}
