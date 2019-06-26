@@ -4,63 +4,6 @@ const canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 canvas.id = `matrix`;
 
-const menuheader = document.createElement('header');	
-document.body.appendChild(menuheader);	
-menuheader.id = `menuheader`;	
-
-const menudrop = document.createElement('div');	
-document.getElementById('menuheader').appendChild(menudrop);	
-menudrop.id = `dropdown`;	
-menudrop.setAttribute('class','dropdown');	
-
-const menuspan = document.createElement('span');	
-document.getElementById('dropdown').appendChild(menuspan);	
-menuspan.id = `menuspan`;	
-
-
-const menuicon = document.createElement('i');	
-document.getElementById('menuspan').appendChild(menuicon);	
-menuicon.classList = `fas fa-bars`;	
-menuicon.id = `menuicon`;	
-
-const divC = document.createElement('div');	
-document.getElementById('dropdown').appendChild(divC);	
-divC.id = `dropdown-content`;	
-divC.setAttribute('class','dropdown-content');	
-
-const link = document.createElement('a');	
-link.href = `#`;	
-link.id = `profile`;	
-link.title = `blog`;	
-link.setAttribute('aria-label', 'link to my blog');	
-document.getElementById('dropdown-content').appendChild(link);	
-
-const profile = document.createElement('i');	
-document.getElementById('profile').appendChild(profile);	
-profile.classList = `fas fa-blog`;	
-
-const link1 = document.createElement('a');	
-link1.href = `#`;	
-link1.id = `profile2`;	
-link1.title = `tutorials`;	
-link1.setAttribute('aria-label', 'link to my tutorials');	
-document.getElementById('dropdown-content').appendChild(link1);	
-
-const profile2 = document.createElement('i');	
-document.getElementById('profile2').appendChild(profile2);	
-profile2.classList = `fas fa-chalkboard-teacher`;	
-
-const link3 = document.createElement('a');	
-link3.href = `#`;	
-link3.id = `profile3`;	
-link3.title = `contact me`;	
-link3.setAttribute('aria-label', 'link to my contact me');	
-document.getElementById('dropdown-content').appendChild(link3);	
-
-const profile3 = document.createElement('i');	
-document.getElementById('profile3').appendChild(profile3);	
-profile3.classList = `fas fa-address-card`;
-
 const main = document.createElement('main');
 document.body.appendChild(main);
 main.id = `main`;
@@ -97,6 +40,7 @@ footer.appendChild(twitterLink);
 
 const twitter = document.createElement('i');
 twitter.classList = `fab fa-twitter`;
+twitter.title = `Ibrahim Ragab twitter Profile`;
 document.getElementById('twitter').appendChild(twitter);
 
 const githubLink = document.createElement('a');
@@ -109,6 +53,7 @@ footer.appendChild(githubLink);
 
 const github = document.createElement('i');
 github.classList = `fab fa-github`;
+github.title = `Ibrahim Ragab github Profile`;
 document.getElementById('github').appendChild(github);
 
 const linkedinLink = document.createElement('a');
@@ -121,7 +66,21 @@ footer.appendChild(linkedinLink);
 
 const linkedin = document.createElement('i');
 linkedin.classList = `fab fa-linkedin`;
+linkedin.title = `Ibrahim Ragab linkedin Profile`;
 document.getElementById('linkedin').appendChild(linkedin);
+
+const devTo = document.createElement('a');
+devTo.href = `https://dev.to/yuribenjamin`;
+devTo.target = '_blank';
+devTo.rel = 'noopener';
+devTo.id = `devTo`;
+devTo.setAttribute('aria-label','link to my Dev.to');
+footer.appendChild(devTo);
+
+const devLink = document.createElement('i');
+devLink.classList = `fab fa-dev`
+devLink.title = `Ibrahim Ragab DEV Profile`;
+document.getElementById('devTo').appendChild(devLink);
 
 let pos = 0;
 let speed = 150;
